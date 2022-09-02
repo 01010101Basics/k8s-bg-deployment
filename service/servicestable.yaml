@@ -1,0 +1,18 @@
+--- #loadbalancer
+apiVersion: v1
+kind: Service
+metadata:
+  name: 'hotel-svc-stable'
+  namespace: hotel
+  annotations:
+    metallb.universe.tf/address-pool: first-pool
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+    name: http
+  selector:
+    app: hotel
+    version: green  
+  type: LoadBalancer
