@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: hotel
-        image: kmgoddard/bgapp:1.1
+        image: kmgoddard/bgapp:1.3
         ports:
         - containerPort: 80
