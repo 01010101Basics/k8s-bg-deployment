@@ -1,14 +1,14 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: hotel-ingress-stable
-  namespace: hotel
+  name: ilab-ingress-stable
+  namespace: ilab
 spec:
   rules:
-  - host: hotel.example.com 
+  - host: ilab.example.com 
     http:
       paths:
       - path: /
         backend:
-          serviceName: hotel-svc-stable
+          serviceName: ilab-svc-stable
           servicePort: 80

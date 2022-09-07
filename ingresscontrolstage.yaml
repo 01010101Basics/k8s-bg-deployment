@@ -1,14 +1,14 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: hotel-ingress-stage
-  namespace: hotel
+  name: ilab-ingress-stage
+  namespace: ilab
 spec:
   rules:
-  - host: hotelstage.example.com 
+  - host: ilabstage.example.com 
     http:
       paths:
       - path: /
         backend:
-          serviceName: hotel-svc-stage
+          serviceName: ilab-svc-stage
           servicePort: 80

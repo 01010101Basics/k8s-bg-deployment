@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hotel-green
-  namespace: hotel
+  name: ilab-green
+  namespace: ilab
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: hotel
+      app: ilab
       version: green
   template:
     metadata:
       labels:
-        app: hotel
+        app: ilab
         version: green
     spec:
       containers:
-      - name: hotel
+      - name: ilab
         image: kmgoddard/bgapp:1.1
         ports:
         - containerPort: 80
