@@ -15,18 +15,8 @@ spec:
         app: ilab
         version: green
     spec:
-      containers:
-<<<<<<< HEAD
-<<<<<<< HEAD
-      - name: ilab
-        image: kmgoddard/bgapp:1.1
-=======
-      - name: ilab
-        image: kmgoddard/bgapp:1.3
->>>>>>> a9ffb1b8ede502fecc5542f1f59ca700e81af1b8
-=======
-      - name: hotel
-        image: kmgoddard/bgapp:1.3
->>>>>>> a9ffb1b8ede502fecc5542f1f59ca700e81af1b8
-        ports:
-        - containerPort: 80
+       containers:
+       - name: ilab
+         image: kmgoddard/bgapp:1.4
+         ports:
+         - containerPort: 80

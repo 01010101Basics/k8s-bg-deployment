@@ -2,8 +2,8 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: 'hotel-service-stage'
-  namespace: hotel
+  name: 'ilab-service-stage'
+  namespace: ilab
   annotations:
     metallb.universe.tf/address-pool: first-pool
 spec:
@@ -13,6 +13,6 @@ spec:
     protocol: TCP
     name: http
   selector:
-    app: hotel
+    app: ilab
     version: blue  
   type: LoadBalancer
