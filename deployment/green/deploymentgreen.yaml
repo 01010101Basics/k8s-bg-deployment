@@ -20,7 +20,7 @@ spec:
       - name: ilab
         image: kmgoddard/bgapp:1.1
 =======
-      - name: hotel
+      - name: ilab
         image: kmgoddard/bgapp:1.3
 >>>>>>> a9ffb1b8ede502fecc5542f1f59ca700e81af1b8
         ports:
